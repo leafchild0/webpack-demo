@@ -12,7 +12,7 @@ export default {
   name: "dummy",
   data: () => {
 	  return {
-		message: 'Hello from Vue',
+		  message: 'Hello from Vue',
 	  	dummies: ['I\'m item from Vue', 'Me too, from component', 'Last, but not least']
 	  }
   }
