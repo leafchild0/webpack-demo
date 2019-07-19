@@ -11,7 +11,6 @@ function component(id) {
 	element.classList.add('test');
 	element.id = id;
 
-	console.log('component input');
 	comp.test();
   
 	return element;
@@ -20,9 +19,14 @@ function component(id) {
   document.body.appendChild(component('elemId'));
   document.body.appendChild(component('vue'));
 
-  new Vue({
+  let app = new Vue({
 	el: '#vue',
 	template: '<dummy/>',
 	components: { newComponent },
 	render: h => h(newComponent)
   })
+
+  module.exports = {
+	component,
+	app
+  }

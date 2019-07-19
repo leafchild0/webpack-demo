@@ -18,4 +18,7 @@ module.exports = {
         "html",
         "text-summary"
     ],
+    moduleNameMapper: {
+        "^.+\\.(css|less|scss)$": "babel-jest"
+    }
 }
